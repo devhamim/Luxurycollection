@@ -90,4 +90,5 @@ class landingpageController extends Controller
     }
 
 
+
 }

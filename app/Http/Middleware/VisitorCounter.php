@@ -20,22 +20,22 @@ class VisitorCounter
     public function handle(Request $request, Closure $next): Response
     {
 
-        $ip = $this->getIpAddress($request);
-        $location = Location::get($ip);
+        // $ip = $this->getIpAddress($request);
+        // $location = Location::get($ip);
 
-        // Log the raw location data for debugging
-        Log::info('Visitor IP: ' . $ip);
-        Log::info('Raw Location Data: ', (array)$location);
+        // // Log the raw location data for debugging
+        // Log::info('Visitor IP: ' . $ip);
+        // Log::info('Raw Location Data: ', (array)$location);
 
-        // Use fallback values if location data is not available
-        $country = $location ? ($location->countryCode ?? 'Unknown') : 'Unknown';
-        $city = $location ? ($location->cityName ?? 'Unknown') : 'Unknown';
+        // // Use fallback values if location data is not available
+        // $country = $location ? ($location->countryCode ?? 'Unknown') : 'Unknown';
+        // $city = $location ? ($location->cityName ?? 'Unknown') : 'Unknown';
 
-        Visitor::create([
-            'ip' => $ip,
-            'country' => $country,
-            'city' => $city,
-        ]);
+        // Visitor::create([
+        //     'ip' => $ip,
+        //     'country' => $country,
+        //     'city' => $city,
+        // ]);
 
         return $next($request);
 
