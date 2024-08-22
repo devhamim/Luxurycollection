@@ -624,8 +624,8 @@
                                     font-size: 59px
                                 }
                             </style>
-                            <h2 class="elementor-heading-title elementor-size-default">সম্পূর্ণ আফসানা প্রিন্ট করা
-                                আনস্টিজ থ্রি-পিস​</h2>
+                            <h2 class="elementor-heading-title elementor-size-default">সম্পূর্ণ এমব্রয়ডারি কাজ করা
+                                আনস্টিজ টু-পিস​</h2>
                         </div>
                     </div>
                 </div>
@@ -636,7 +636,7 @@
                     <div class="elementor-element elementor-element-4d1bc1a elementor-widget elementor-widget-heading"
                         data-id="4d1bc1a" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">এই ফটোতে দেখানো থ্রি-পিছটি যেমন
+                            <h2 class="elementor-heading-title elementor-size-default">এই ফটোতে দেখানো টু-পিছটি যেমন
                                 দেখছেন </br>হুবহো এটিই পাবেন</h2>
                         </div>
                     </div>
@@ -662,7 +662,7 @@
                     <div class="elementor-element elementor-element-74c735e elementor-widget elementor-widget-heading"
                         data-id="74c735e" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">থ্রি-পিছ : লং জামা, উড়না,
+                            <h2 class="elementor-heading-title elementor-size-default">টু-পিছ : লং জামা, উড়না,
                                 সেলোয়ার</h2>
                         </div>
                     </div>
@@ -720,7 +720,7 @@
                                     display: inline-block
                                 }
                             </style>
-                            <p>বাজারের কপি থ্রি পিসের সঙ্গে আমাদের প্রোডাক্ট কে তুলনা করবেন না। আমরা নিজস্ব তত্ত্বাবধানে
+                            <p>বাজারের কপি টু পিসের সঙ্গে আমাদের প্রোডাক্ট কে তুলনা করবেন না। আমরা নিজস্ব তত্ত্বাবধানে
                                 ইসলামপুরে আমাদের নিজস্ব ফ্যাক্টরিতে মেনুফ্যাকচারিং করে থাকি। কারন আমরা সম্পূর্ণ কাপড়
                                 নিজেরা প্রস্তুত করি কাপড়ের ওড়না ও পায়জামার কাপড় সম্পূর্ণ সুতি কাপড়।</p>
                         </div>
