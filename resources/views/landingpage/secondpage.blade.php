@@ -1313,7 +1313,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <div class="my-2">
+                                                <h2>পছন্দের কালারটি সিলেক্ট করুন  *</h2>
+                                            </div>
                                             <div class="woocommerce-input-wrapper">
                                                 @php
                                                     $landingColor = $products->landingcolor;
