@@ -276,7 +276,7 @@
 	line-height: 10px;
 }
 
-.wcf-embed-checkout-form .woocommerce .woocommerce-checkout input[type="checkbox"]:checked::before,
+/* .wcf-embed-checkout-form .woocommerce .woocommerce-checkout input[type="checkbox"]:checked::before,
 .wcf-embed-checkout-form .woocommerce .woocommerce-billing-fields [type="checkbox"]:checked::before,
 .wcf-embed-checkout-form .woocommerce #payment input[type="checkbox"]:checked::before,
 .wcf-embed-checkout-form .woocommerce .woocommerce-shipping-fields [type="checkbox"]:checked::before,
@@ -284,7 +284,7 @@
 	content: "\e600";
 	margin: 0;
 	color: var( --wcf-primary-color );
-}
+} */
 
 .wcf-embed-checkout-form .woocommerce .woocommerce-checkout input[type="checkbox"],
 .wcf-embed-checkout-form .woocommerce .woocommerce-billing-fields [type="checkbox"],
@@ -310,7 +310,7 @@
 	vertical-align: middle;
 	width: 16px;
 	min-width: 16px;
-	-webkit-appearance: none;
+	/* -webkit-appearance: none; */
 	box-shadow: inset 0 1px 2px rgba( 0, 0, 0, 0.1 );
 	transition: 0.05s border-color ease-in-out;
 }

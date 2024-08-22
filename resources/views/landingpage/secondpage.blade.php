@@ -624,7 +624,7 @@
                                     font-size: 59px
                                 }
                             </style>
-                            <h2 class="elementor-heading-title elementor-size-default">সম্পূর্ণ আফসান প্রিন্ট করা
+                            <h2 class="elementor-heading-title elementor-size-default">সম্পূর্ণ আফসানা প্রিন্ট করা
                                 আনস্টিজ থ্রি-পিস​</h2>
                         </div>
                     </div>
@@ -1313,14 +1313,15 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="woocommerce-input-wrapper" style="display: none">
+
+                                            <div class="woocommerce-input-wrapper">
                                                 @php
                                                     $landingColor = $products->landingcolor;
                                                     $colorsArray = explode(',', $landingColor);
                                                 @endphp
                                                 @foreach ($colorsArray as $sl=>$color)
                                                     <label>
-                                                        <input type="checkbox" {{ $sl == 0? 'checked':'' }} name="color[]" value="{{ $color }}" class="input-checkbox">
+                                                        <input type="checkbox" {{ $sl == 0? 'checked':'' }} name="color[]" value="{{ $color }}" >
                                                         {{ $color }}
                                                     </label>
                                                 @endforeach
