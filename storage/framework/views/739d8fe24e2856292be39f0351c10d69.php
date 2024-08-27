@@ -1733,7 +1733,25 @@ unset($__errorArgs, $__bag); ?>
             </div>
         </div>
     </div>
-
+    <style>
+        .fixed-cart-whats {
+            position: fixed;
+            bottom: 14rem;
+            right: 35px;
+            border-radius: 12px;
+            cursor: pointer;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+            z-index: 9999;
+        }
+    </style>
+    <a href="https://api.whatsapp.com/send?phone=88<?php echo e($setting->first()->number_two); ?>&text=Hello%20there,%20I%20found%20you%20on%20website!%20i%20would%20like%20to%20talk%20about%20your%20Product." target="_blank" class="cart-dropdown-btn">
+        <div class="fixed-cart-whats">
+            <img width="48" height="48" src="<?php echo e(asset('landing/whatsapp.png')); ?>" alt="whatsapp--v1" />
+        </div>
+    </a>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const quantityInput = document.getElementById('quantity');
