@@ -624,8 +624,7 @@
                                     font-size: 59px
                                 }
                             </style>
-                            <h2 class="elementor-heading-title elementor-size-default">সম্পূর্ণ এমব্রয়ডারি কাজ করা
-                                আনস্টিজ টু-পিস​</h2>
+                            <h2 class="elementor-heading-title elementor-size-default">প্রিয় মানুষকে মনের মতো সাজিয়ে নিন এই সুন্দর ড্রেস টি গিফট দিয়ে।​</h2>
                         </div>
                     </div>
                 </div>
@@ -636,8 +635,7 @@
                     <div class="elementor-element elementor-element-4d1bc1a elementor-widget elementor-widget-heading"
                         data-id="4d1bc1a" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">এই ফটোতে দেখানো টু-পিছটি যেমন
-                                দেখছেন </br>হুবহো এটিই পাবেন</h2>
+                            <h2 class="elementor-heading-title elementor-size-default">এই ফটোতে দেখানো ড্রেসটি যেমন দেখছেন </br>হুবহো এটিই পাবেন</h2>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-3fa34cd elementor-widget elementor-widget-image">
@@ -662,8 +660,7 @@
                     <div class="elementor-element elementor-element-74c735e elementor-widget elementor-widget-heading"
                         data-id="74c735e" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">টু-পিছ : লং জামা, উড়না,
-                                সেলোয়ার</h2>
+                            <h2 class="elementor-heading-title elementor-size-default">{{ $products->name }}</h2>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-76e0cfa elementor-widget elementor-widget-image"
