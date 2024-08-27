@@ -717,7 +717,7 @@
                                     display: inline-block
                                 }
                             </style>
-                            <p>বাজারের কপি টু পিসের সঙ্গে আমাদের প্রোডাক্ট কে তুলনা করবেন না। আমরা নিজস্ব তত্ত্বাবধানে
+                            <p>বাজারের কপি ড্রেসের সঙ্গে আমাদের প্রোডাক্ট কে তুলনা করবেন না। আমরা নিজস্ব তত্ত্বাবধানে
                                 ইসলামপুরে আমাদের নিজস্ব ফ্যাক্টরিতে মেনুফ্যাকচারিং করে থাকি। কারন আমরা সম্পূর্ণ কাপড়
                                 নিজেরা প্রস্তুত করি কাপড়ের ওড়না ও পায়জামার কাপড় সম্পূর্ণ সুতি কাপড়।</p>
                         </div>
@@ -841,6 +841,24 @@
                                             <span class="elementor-button-text"> অর্ডার করুন</span>
                                         </span>
                                     </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-2c2f085 elementor-align-center elementor-widget elementor-widget-button"
+                            data-id="2c2f085" data-element_type="widget" data-widget_type="button.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-button-wrapper">
+                                    @if ($setting->first()->number_two != null)
+                                        <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-pulse-grow"
+                                            href="https://api.whatsapp.com/send?phone=88{{$setting->first()->number_two}}&text=Hello%20there,%20I%20found%20you%20on%20website!%20i%20would%20like%20to%20talk%20about%20your%20Product." target="_blank" style="background: #33D422">
+                                            <span class="elementor-button-content-wrapper">
+                                                <span class="elementor-button-icon elementor-align-icon-left">
+                                                    <img style="width: 30px" src="{{ asset('landingpage/sharee/whatsapp.png') }}" alt="">
+                                                    <span
+                                                        class="elementor-button-text">{{ $setting->first()->number_two }}</span>
+                                                </span>
+                                        </a>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -1708,11 +1726,6 @@
             z-index: 9999;
         }
     </style>
-    <a href="https://api.whatsapp.com/send?phone=88{{$setting->first()->number_two}}&text=Hello%20there,%20I%20found%20you%20on%20website!%20i%20would%20like%20to%20talk%20about%20your%20Product." target="_blank" class="cart-dropdown-btn">
-        <div class="fixed-cart-whats">
-            <img width="48" height="48" src="{{ asset('landing/whatsapp.png') }}" alt="whatsapp--v1" />
-        </div>
-    </a>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const quantityInput = document.getElementById('quantity');

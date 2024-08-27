@@ -626,8 +626,7 @@
                                     font-size: 59px
                                 }
                             </style>
-                            <h2 class="elementor-heading-title elementor-size-default">সম্পূর্ণ এমব্রয়ডারি কাজ করা
-                                আনস্টিজ টু-পিস​</h2>
+                            <h2 class="elementor-heading-title elementor-size-default">প্রিয় মানুষকে মনের মতো সাজিয়ে নিন এই সুন্দর ড্রেস টি গিফট দিয়ে।​</h2>
                         </div>
                     </div>
                 </div>
@@ -638,8 +637,7 @@
                     <div class="elementor-element elementor-element-4d1bc1a elementor-widget elementor-widget-heading"
                         data-id="4d1bc1a" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">এই ফটোতে দেখানো টু-পিছটি যেমন
-                                দেখছেন </br>হুবহো এটিই পাবেন</h2>
+                            <h2 class="elementor-heading-title elementor-size-default">এই ফটোতে দেখানো ড্রেসটি যেমন দেখছেন </br>হুবহো এটিই পাবেন</h2>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-3fa34cd elementor-widget elementor-widget-image">
@@ -664,8 +662,7 @@
                     <div class="elementor-element elementor-element-74c735e elementor-widget elementor-widget-heading"
                         data-id="74c735e" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">টু-পিছ : লং জামা, উড়না,
-                                সেলোয়ার</h2>
+                            <h2 class="elementor-heading-title elementor-size-default"><?php echo e($products->name); ?></h2>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-76e0cfa elementor-widget elementor-widget-image"
@@ -722,7 +719,7 @@
                                     display: inline-block
                                 }
                             </style>
-                            <p>বাজারের কপি টু পিসের সঙ্গে আমাদের প্রোডাক্ট কে তুলনা করবেন না। আমরা নিজস্ব তত্ত্বাবধানে
+                            <p>বাজারের কপি ড্রেসের সঙ্গে আমাদের প্রোডাক্ট কে তুলনা করবেন না। আমরা নিজস্ব তত্ত্বাবধানে
                                 ইসলামপুরে আমাদের নিজস্ব ফ্যাক্টরিতে মেনুফ্যাকচারিং করে থাকি। কারন আমরা সম্পূর্ণ কাপড়
                                 নিজেরা প্রস্তুত করি কাপড়ের ওড়না ও পায়জামার কাপড় সম্পূর্ণ সুতি কাপড়।</p>
                         </div>
@@ -846,6 +843,24 @@
                                             <span class="elementor-button-text"> অর্ডার করুন</span>
                                         </span>
                                     </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-2c2f085 elementor-align-center elementor-widget elementor-widget-button"
+                            data-id="2c2f085" data-element_type="widget" data-widget_type="button.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-button-wrapper">
+                                    <?php if($setting->first()->number_two != null): ?>
+                                        <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-pulse-grow"
+                                            href="https://api.whatsapp.com/send?phone=88<?php echo e($setting->first()->number_two); ?>&text=Hello%20there,%20I%20found%20you%20on%20website!%20i%20would%20like%20to%20talk%20about%20your%20Product." target="_blank" style="background: #33D422">
+                                            <span class="elementor-button-content-wrapper">
+                                                <span class="elementor-button-icon elementor-align-icon-left">
+                                                    <img style="width: 30px" src="<?php echo e(asset('landingpage/sharee/whatsapp.png')); ?>" alt="">
+                                                    <span
+                                                        class="elementor-button-text"><?php echo e($setting->first()->number_two); ?></span>
+                                                </span>
+                                        </a>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
@@ -1747,11 +1762,6 @@ unset($__errorArgs, $__bag); ?>
             z-index: 9999;
         }
     </style>
-    <a href="https://api.whatsapp.com/send?phone=88<?php echo e($setting->first()->number_two); ?>&text=Hello%20there,%20I%20found%20you%20on%20website!%20i%20would%20like%20to%20talk%20about%20your%20Product." target="_blank" class="cart-dropdown-btn">
-        <div class="fixed-cart-whats">
-            <img width="48" height="48" src="<?php echo e(asset('landing/whatsapp.png')); ?>" alt="whatsapp--v1" />
-        </div>
-    </a>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const quantityInput = document.getElementById('quantity');
