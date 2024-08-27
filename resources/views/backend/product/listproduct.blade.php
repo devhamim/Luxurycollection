@@ -189,6 +189,7 @@
                                                     </button>
 
                                                     <div class="dropdown-menu">
+                                                        <a target="_blanck" href="{{ url('/landing/'. $product->slug) }}" class="dropdown-item">Preview</a>
                                                         <a href="{{ route('product.edit',  $product->id) }}" class="dropdown-item">Edit</a>
                                                         <form action="{{ route('product.destroy',  $product->id) }}" method="POST">
                                                             @csrf
