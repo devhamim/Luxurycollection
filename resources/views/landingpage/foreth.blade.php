@@ -1602,7 +1602,6 @@
                                                                                         @endif
                                                                                     @endif
                                                                                 </div>
-                                                                                
                                                                                 <div class="wcf-item-image" style="">
                                                                                     <label for="product_1">
                                                                                         <input type="hidden" name="image" value="{{ asset('secondlanding/1.jpg') }}">
@@ -1874,7 +1873,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-
+                                                                
                                                                 <div class="wcf-col2-set col2-set" id="customer_details">
                                                                     <div class="wcf-col-1 col-1">
                                                                         <wc-order-attribution-inputs></wc-order-attribution-inputs>

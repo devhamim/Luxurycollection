@@ -40,8 +40,12 @@ Route::post('/multi/order/status', [PrintController::class, 'multi_order_status'
 Route::get('/landing/page', [landingpageController::class, 'landing_page'])->name('landing.page');
 Route::post('/landing/order/store', [landingpageController::class, 'landing_order_store'])->name('landing.order.store');
 Route::get('/landing/{slug}', [landingpageController::class, 'landing_product'])->name('landing.product');
-Route::get('/fashion/{slug}', [landingpageController::class, 'fashion_product'])->name('fashion.product');
+
+Route::get('/fashion/pakistani-baroque', [landingpageController::class, 'fashion_product'])->name('fashion.product');
 Route::post('/fashion/order/store', [landingpageController::class, 'fashion_order_store'])->name('fashion.order.store');
+// foreth
+Route::get('/fashion/pakistani-tawakkal', [landingpageController::class, 'foreth_product'])->name('foreth.product');
+Route::post('/fashion/order/store', [landingpageController::class, 'foreth_order_store'])->name('foreth.order.store');
 
 
 // login
