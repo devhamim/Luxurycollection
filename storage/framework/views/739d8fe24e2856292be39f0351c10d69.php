@@ -645,9 +645,7 @@
                             <div class="imageautoplay">
                                 <?php $__currentLoopData = $products_gallery; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $gallery): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                     <?php if($gallery->gallery_number == 1): ?>
-                                    <img decoding="async" width="800" height="1354"
-                                src="<?php echo e(asset('uploads/product/gallery')); ?>/<?php echo e($gallery->image); ?>"
-                                class="attachment-full size-full wp-image-563" alt="" sizes="(max-width: 800px) 100vw, 800px" />
+                                    <img decoding="async" width="800" height="1354" src="<?php echo e(asset('uploads/product/gallery')); ?>/<?php echo e($gallery->image); ?>" class="attachment-full size-full wp-image-563" alt="" sizes="(max-width: 800px) 100vw, 800px" />
                                     <?php endif; ?>
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             </div>

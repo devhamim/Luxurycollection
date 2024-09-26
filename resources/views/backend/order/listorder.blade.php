@@ -171,16 +171,18 @@
                                         </td>
                                         <td>{{ $sl+1 }}</td>
                                         <td class="image_copy">
-                                            @foreach ($order->rel_to_orderpro->take(1) as $OrderProduct)
-                                                @if ($OrderProduct != null)
-                                                    @if ($OrderProduct->rel_to_attribute != null)
-                                                    {{-- {{ $OrderProduct->rel_to_attribute->image }} --}}
-                                                        <img  width="100" src="{{ asset('uploads/product') }}/{{ $OrderProduct->rel_to_attribute->image }}" alt="Image" />
-                                                    @elseif ($OrderProduct->rel_to_pro)
-                                                        {{-- <img width="100" src="{{ asset('uploads/product') }}/{{ $OrderProduct->rel_to_pro->image }}" alt="Image" /> --}}
+                                            @if ($order->landing == 2)
+                                                <img  width="100" src="{{ $order->image }}" alt="Image" />
+                                            @else
+                                                @foreach ($order->rel_to_orderpro->take(1) as $OrderProduct)
+                                                    @if ($OrderProduct != null)
+                                                        @if ($OrderProduct->rel_to_attribute != null)
+                                                            <img  width="100" src="{{ asset('uploads/product') }}/{{ $OrderProduct->rel_to_attribute->image }}" alt="Image" />
+                                                        @endif
                                                     @endif
-                                                @endif
-                                            @endforeach
+                                                @endforeach
+                                            @endif
+
                                         </td>
                                         <td>{{ $order->order_id }}</td>
                                         <td>
@@ -200,17 +202,7 @@
                                         <td>
                                             @foreach ($order->rel_to_orderpro as $OrderProduct)
                                                 @if ($OrderProduct != null)
-                                                    @if ($order->landing == 1)
-                                                        <span>{{ $OrderProduct->rel_to_pro->name??'' }} <br> <span class="quantity_copy">
-                                                            {{ $OrderProduct->quantity }}</span> x {{ $OrderProduct->price }},
-                                                            @if ($order->color != null)
-                                                                Color: {{ $order->color }}
-                                                            @endif
-                                                            @if ($order->size)
-                                                                Size: {{ $order->size }}
-                                                            @endif
-                                                        </span><hr>
-                                                    @else
+                                                    @if ($order->landing == null)
                                                         @if ($OrderProduct->rel_to_attribute != null)
                                                             <span>{{ $OrderProduct->rel_to_pro->name??'' }} <br> {{ $OrderProduct->quantity }} x {{ $OrderProduct->price }},
                                                                 @if ($OrderProduct->rel_to_attribute->weight != null)
@@ -230,6 +222,16 @@
                                                                 @endif
                                                             </span><hr>
                                                         @endif
+                                                    @else
+                                                        <span>{{ $OrderProduct->rel_to_pro->name??'' }} <br> <span class="quantity_copy">
+                                                            {{ $OrderProduct->quantity }}</span> x {{ $OrderProduct->price }},
+                                                            @if ($order->color != null)
+                                                                Color: {{ $order->color }}
+                                                            @endif
+                                                            @if ($order->size)
+                                                                Size: {{ $order->size }}
+                                                            @endif
+                                                        </span><hr>
                                                     @endif
 
                                                 @endif

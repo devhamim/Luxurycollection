@@ -643,9 +643,7 @@
                             <div class="imageautoplay">
                                 @foreach ($products_gallery as $gallery)
                                     @if ($gallery->gallery_number == 1)
-                                    <img decoding="async" width="800" height="1354"
-                                src="{{ asset('uploads/product/gallery') }}/{{ $gallery->image }}"
-                                class="attachment-full size-full wp-image-563" alt="" sizes="(max-width: 800px) 100vw, 800px" />
+                                    <img decoding="async" width="800" height="1354" src="{{ asset('uploads/product/gallery') }}/{{ $gallery->image }}" class="attachment-full size-full wp-image-563" alt="" sizes="(max-width: 800px) 100vw, 800px" />
                                     @endif
                                 @endforeach
                             </div>
@@ -1207,7 +1205,7 @@
                                     <div class="woocommerce">
                                         <div class="woocommerce-notices-wrapper"></div>
                                         <div class="woocommerce-notices-wrapper"></div>
-                                            <form action="{{ route('landing.order.store') }}" method="POST" class="checkout woocommerce-checkout">
+                                            <form action="{{ route('fashion.order.store') }}" method="POST" class="checkout woocommerce-checkout">
                                                 @csrf
                                                 <input type="hidden" name="product_id" value="{{ $products->id }}">
                                                 @if ($products->inventorie_id != null)
